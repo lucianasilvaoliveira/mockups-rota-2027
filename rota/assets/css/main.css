@@ -590,3 +590,9 @@ ul{padding:0;list-style:none}
 .assinar + .compartilhar{margin-top:24px}
 @media (max-width:719px){.assinar{padding:20px}.assinar__botoes .botao{flex:1 1 100%;justify-content:center}}
 @media print{.assinar{display:none!important}}
+
+/* Cartão de coluna/artigo: nome, título e data juntos no topo (sem espalhar pela altura da linha) e nome longo cortado */
+.coluna-card{grid-template-columns:72px minmax(0,1fr);align-content:start;grid-template-rows:auto auto 1fr}
+.coluna-card .rotulo{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.coluna-card--autores{grid-template-columns:minmax(0,1fr);grid-template-rows:none}
+.coluna-card--autores .rotulo{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;white-space:normal}
