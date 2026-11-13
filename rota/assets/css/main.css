@@ -155,6 +155,13 @@ ul{padding:0;list-style:none}
 .menu__sub .foto-colunista--vazia,.outras-colunas .foto-colunista--vazia{font-size:11px}
 .coluna-card .card__titulo{font-size:16px}
 .coluna-card .card__meta,.coluna-card .card__data{margin-top:6px}
+/* Dois ou três autores: fotos sobrepostas em cima, na ordem da assinatura (nenhuma foto é cortada) */
+.coluna-card--autores{grid-template-columns:1fr}
+.coluna-card--autores .coluna-card__foto{grid-row:auto;margin-bottom:12px}
+.autores{display:flex}
+.autores .autores__foto{width:56px;height:56px;box-shadow:0 0 0 3px var(--papel)}
+.autores .autores__foto + .autores__foto{margin-left:-8px}
+.autores .foto-colunista--vazia{font-size:13px;background:var(--papel)}
 
 /* Apoiadores: carrossel com scroll-snap (5 por vez no computador, 4 no tablet, 2 no celular) */
 .apoio{--por-vez:5;margin-top:40px;padding:20px 0 24px;border-top:1px solid var(--filete);border-bottom:1px solid var(--filete)}
@@ -217,6 +224,12 @@ ul{padding:0;list-style:none}
 
 .colunista-box__bio{margin-top:14px;font-size:14px;line-height:1.55;color:var(--tinta-2)}
 .colunista-box__bio p{margin:0 0 .6em}
+.colunista-box__autor + .colunista-box__autor{margin-top:18px;padding-top:18px;border-top:1px solid var(--filete)}
+.colunista-box--varios .foto-colunista{width:56px;height:56px}
+.colunista-box--varios .colunista-box__nome{font-size:16px}
+.colunista-box--varios .colunista-box__bio{margin-top:10px;font-size:13px}
+.coluna-sobre .rotulo{margin:0 0 6px}
+.card__autor strong{font-weight:600;color:var(--tinta-2)}
 /* No computador a apresentação fica na lateral; o "Sobre o colunista" do fim só aparece sem a lateral */
 @media (min-width:1024px){.sobre-autor{display:none}}
 
@@ -377,12 +390,14 @@ ul{padding:0;list-style:none}
 }
 
 /* Sobre o colunista */
-.sobre-autor{display:grid;grid-template-columns:96px 1fr;gap:20px;margin-top:40px;padding:24px 0;border-top:2px solid var(--tinta);border-bottom:1px solid var(--filete)}
+.sobre-autor{margin-top:40px;padding:24px 0;border-top:2px solid var(--tinta);border-bottom:1px solid var(--filete)}
+.sobre-autor__pessoa{display:grid;grid-template-columns:96px 1fr;gap:20px;margin-top:14px}
+.sobre-autor__pessoa + .sobre-autor__pessoa{margin-top:22px;padding-top:22px;border-top:1px solid var(--filete)}
 .sobre-autor .foto-colunista{width:96px;height:96px}
 .sobre-autor .rotulo{margin-top:0}
 .sobre-autor__nome{font:700 20px/1.2 var(--sans);margin-bottom:6px}
 .sobre-autor p{font-size:15px;line-height:1.55;color:var(--tinta-2)}
-@media (max-width:719px){.sobre-autor{grid-template-columns:72px 1fr;gap:14px}.sobre-autor .foto-colunista{width:72px;height:72px}}
+@media (max-width:719px){.sobre-autor__pessoa{grid-template-columns:72px 1fr;gap:14px}.sobre-autor .foto-colunista{width:72px;height:72px}}
 
 /* Botões */
 .botao{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--tinta);border:1px solid var(--tinta);color:var(--papel);font:600 14px/1.2 var(--sans);border-radius:10px 0 10px 0;cursor:pointer}
