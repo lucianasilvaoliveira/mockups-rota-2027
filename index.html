@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v24.0 (Yoast SEO v24.0) - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Rota Jurídica" />
+	<meta name="twitter:card" content="summary_large_image" />
+	
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="preload" href="rota/assets/fonts/inter-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel='dns-prefetch' href='//www.rotajuridica.com.br' />
+
+
+
+
+
+
+
+
+
+
+
+<link rel='stylesheet' id='rota-css' href='rota/assets/css/main.css?ver=1793806955' media='all' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.rotajuridica.com.br/xmlrpc.php?rsd" />
+<link rel="icon" href="https://www.rotajuridica.com.br/wp-content/uploads/2018/01/cropped-rotajuridica-opengraph-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.rotajuridica.com.br/wp-content/uploads/2018/01/cropped-rotajuridica-opengraph-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.rotajuridica.com.br/wp-content/uploads/2018/01/cropped-rotajuridica-opengraph-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.rotajuridica.com.br/wp-content/uploads/2018/01/cropped-rotajuridica-opengraph-270x270.png" />
+<style>.ad:empty{display:flex;align-items:center;justify-content:center;color:#8d887f;font:500 12px Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase}.ad:empty::before{content:"Anúncio " attr(data-medida)}</style>
+<title>Página inicial · Rota Jurídica (mockup 2027)</title><style>
+/* Botão Fale conosco no cabeçalho */
+.botao--fale{margin-left:16px;padding:9px 16px;font-size:13px;background:var(--ouro);border-color:var(--ouro);color:#101010;white-space:nowrap}
+.botao--fale:hover{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.cabeca__busca{margin-left:12px}
+/* Cabeçalho: claro (padrão) ou escuro */
+.marca__logo--escuro{display:none}
+html.cab-escuro .marca__logo--claro{display:none}
+html.cab-escuro .marca__logo--escuro{display:block}
+html.cab-escuro .topbar{background:#0d0d0d;color:#9b968d;border-bottom-color:#262626}
+html.cab-escuro .topbar nav a{color:#cfc9bf}
+html.cab-escuro .cabeca{background:#0d0d0d;color:#fff}
+html.cab-escuro .cabeca .redes__link{color:#fff;border-color:#333}
+html.cab-escuro .cabeca .redes__link:hover{background:var(--ouro);border-color:var(--ouro);color:#0d0d0d}
+html.cab-escuro .cabeca .busca input{background:#1b1b1b;border-color:#333;color:#fff}
+html.cab-escuro .cabeca .busca button{background:var(--ouro);border-color:var(--ouro);color:#0d0d0d}
+html.cab-escuro .botao--fale:hover{background:#fff;border-color:#fff;color:#101010}
+html.cab-escuro .menu-botao{color:#fff;border-color:#fff}
+@media (min-width:720px){
+  html.cab-escuro .menu{background:#1b1b1b;border:0}
+  html.cab-escuro .menu__item>a{color:#e9e4da}
+  html.cab-escuro .menu__item:hover>a,html.cab-escuro .menu__item.is-ativo>a{color:#fff}
+  html.cab-escuro .menu__seta{color:#8a857c}
+}
+@media (max-width:719px){
+  .botao--fale{margin-left:auto;padding:8px 10px}.botao--fale span{display:none}
+  .menu-botao{margin-left:8px}
+}
+
+/* Notícia principal igual ao modelo 2: foto grande com o título sobre a imagem */
+.capa .card--lead{display:block;position:relative;border-radius:14px;overflow:hidden}
+.capa .card--lead .card__foto img{height:420px!important;aspect-ratio:auto;border-radius:0}
+.capa .card--lead .card__texto{position:absolute;left:0;right:0;bottom:0;margin:0;padding:80px 28px 24px;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.capa .card--lead .card__titulo{font-size:34px;line-height:1.12;font-weight:800;letter-spacing:-.02em}
+.capa .card--lead .card__titulo a,.capa .card--lead .card__meta{color:#fff}
+.capa .card--lead .rotulo{display:inline-block;padding:4px 8px;background:var(--ouro);color:#101010;border-radius:4px}
+/* 8 destaques em duas linhas de 4 */
+.capa__apoio .card--mini:nth-child(4n+1)::before{display:none}
+.capa__apoio .card--mini:nth-child(n+5){border-top:1px solid var(--filete)}
+/* Vídeos e podcast */
+.grade--videos-home{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:20px}
+.grade--videos-home .card__titulo{font-size:16px;margin-top:12px}
+.grade--podcast{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}
+/* Artigo com vários autores: avatares sobrepostos ocupando a linha de cima do cartão */
+.coluna-card--autores{grid-template-columns:1fr}
+.autores{display:flex;margin-bottom:12px}
+.autores__foto{display:block;width:56px;height:56px;border-radius:50%;object-fit:cover;background:#eee;box-shadow:0 0 0 3px var(--papel)}
+.autores__foto + .autores__foto{margin-left:-8px}
+
+.exemplo{margin-left:6px;padding:1px 6px;border:1px dashed var(--ouro-texto);border-radius:4px;font-style:normal;font-weight:600;font-size:10px;letter-spacing:.04em;color:var(--ouro-texto)}
+@media (max-width:1023px){.grade--videos-home{grid-template-columns:repeat(2,1fr)}.grade--podcast{grid-template-columns:1fr}}
+@media (max-width:719px){
+  .capa .card--lead .card__foto img{height:340px!important}
+  .capa .card--lead .card__titulo{font-size:24px}
+  .capa .card--lead .card__texto{padding:60px 18px 18px}
+  .capa__apoio .card--mini:nth-child(n+5){border-top:0}
+  .grade--videos-home{grid-template-columns:1fr 1fr;gap:16px}
+}
+
+.ep{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;align-items:center;padding:16px;border:1px solid var(--filete);border-radius:14px 0 14px 0}
+.ep__capa{position:relative;display:grid;place-items:center;aspect-ratio:1;background:#101010;border-radius:10px 0 10px 0;padding:12px}
+.ep__capa img{width:100%;height:auto}
+.ep__capa span{position:absolute;right:6px;bottom:6px;font:700 10px var(--sans);color:var(--ouro);letter-spacing:.06em;text-transform:uppercase}
+.ep .card__titulo{font-size:16px}
+.ep .rotulo{margin-bottom:4px}
+.ep__player{display:flex;align-items:center;gap:10px;margin-top:10px}
+.ep__player button{display:grid;place-items:center;width:34px;height:34px;flex:none;border:0;border-radius:50%;background:var(--ouro);color:#101010;cursor:pointer;padding:0 0 0 2px}
+.ep__barra{flex:1;height:4px;background:var(--filete);border-radius:4px;overflow:hidden}
+.ep__barra i{display:block;height:100%;background:var(--ouro-texto)}
+.ep__tempo{font-size:12px;color:var(--mudo)}
+</style><meta name="robots" content="noindex,nofollow"><style>.versoes .versoes__mapa{margin:0 10px 0 -6px;padding:8px 14px;border-radius:999px;background:#2a2a2a;color:#fff}.versoes .versoes__mapa:hover{background:#3a3a3a}</style></head>
+<body class="wp-embed-responsive wp-theme-rota">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<div class="topbar">
+	<div class="wrap topbar__in">
+		<span class="topbar__data" data-hoje>quarta-feira, 4 de novembro de 2026</span>
+		<nav aria-label="Institucional">
+							<a href="institucional.html">Institucional</a>
+							<a href="apoiadores.html">Apoiadores</a>
+							<a href="colabore.html">Colabore</a>
+					</nav>
+	</div>
+</div>
+
+<header class="cabeca">
+	<div class="wrap cabeca__in">
+		<a class="marca" href="index.html" aria-label="Rota Jurídica, página inicial">
+			<img class="marca__logo marca__logo--claro" src="rota/assets/img/logo.svg" width="217" height="56" alt="Rota Jurídica"><img class="marca__logo marca__logo--escuro" src="rota/assets/img/logo-negativo.svg" width="217" height="56" alt="Rota Jurídica">
+		</a>
+		<div class="cabeca__redes"><ul class="redes" aria-label="Redes sociais da Rota Jurídica">
+			<li><a class="redes__link" href="https://www.instagram.com/rotajuridica/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3"/></svg></a></li>
+			<li><a class="redes__link" href="https://www.facebook.com/RotaJuridica" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg></a></li>
+			<li><a class="redes__link" href="https://x.com/rotajuridica" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X (Twitter)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></li>
+			<li><a class="redes__link" href="https://api.whatsapp.com/send?phone=5562999001860&#038;text=Gostaria%20receber%20not%C3%ADcias%20do%20Rota%20Jur%C3%ADdica%20no%20Whatsapp%21" target="_blank" rel="noopener" aria-label="WhatsApp: receba as notícias" title="WhatsApp: receba as notícias"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.1 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.9 4.5 4 2.2.9 2.7.7 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.3 0-.5z"/></svg></a></li>
+	</ul>
+</div>
+		<a class="botao botao--fale" href="fale-conosco.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.1 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.9 4.5 4 2.2.9 2.7.7 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.3 0-.5z"/></svg><span>Fale conosco</span></a>
+		<div class="cabeca__busca"><form class="busca" role="search" method="get" action="busca.html">
+		<label class="sr" for="s-1">Buscar</label>
+	<input id="s-1" type="search" name="s" value="" placeholder="Buscar no portal">
+	<button type="submit">Buscar</button>
+</form>
+</div>
+		<button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+	</div>
+
+	<nav class="menu" id="menu-principal" aria-label="Principal">
+		<div class="menu__topo">
+			<a class="marca" href="index.html" aria-label="Rota Jurídica, página inicial">
+				<img class="marca__logo" src="rota/assets/img/logo.svg" width="155" height="40" alt="Rota Jurídica">
+			</a>
+			<button class="menu-fechar" type="button" aria-label="Fechar menu">Fechar</button>
+		</div>
+				<ul class="wrap menu__lista">
+			<li class="menu__item"><a href="ultimas.html">Últimas</a></li>
+			<li class="menu__item tem-sub">
+				<a href="colunas.html">Colunas<svg class="menu__seta" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+				<ul class="menu__sub menu__sub--colunas">
+											<li><a href="coluna.html"><img width="32" height="32" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/08/agnaldo-bastos-agosto-2026-150x150.jpg" class="foto-colunista" alt="Agnaldo Bastos" loading="lazy" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/08/agnaldo-bastos-agosto-2026-150x150.jpg 150w, https://www.rotajuridica.com.br/wp-content/uploads/2026/08/agnaldo-bastos-agosto-2026-300x300.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/08/agnaldo-bastos-agosto-2026.jpg 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /><span>Advocacia dos Concursos</span></a></li>
+											<li><a href="coluna.html"><span class="foto-colunista foto-colunista--vazia" aria-hidden="true">MS</span><span>Direito do Cidadão</span></a></li>
+											<li><a href="coluna.html"><img width="32" height="32" src="https://www.rotajuridica.com.br/wp-content/uploads/2017/10/witer-2017.jpg" class="foto-colunista" alt="Witer DeSiqueira" loading="lazy" decoding="async" /><span>USA Fácil</span></a></li>
+											<li><a href="coluna.html"><img class="foto-colunista" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/05/artur-siqueira.jpeg" width="32" height="32" loading="lazy" alt="Artur Siqueira"><span>Rotas do Agronegócio</span></a></li>
+											<li><a href="coluna.html"><img class="foto-colunista" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/04/gilles-gomes-abril-2026.jpeg" width="32" height="32" loading="lazy" alt="Gilles Gomes"><span>Defesa Criminal</span></a></li>
+											<li><a href="coluna.html"><img width="32" height="32" src="https://www.rotajuridica.com.br/wp-content/uploads/2016/07/Advogado-Amadeu-Garrido-150x150.jpg" class="foto-colunista" alt="Amadeu Garrido" loading="lazy" decoding="async" /><span>Ponto de Vista</span></a></li>
+											<li><a href="coluna.html"><img width="32" height="32" src="https://www.rotajuridica.com.br/wp-content/uploads/2015/04/Advogado-Giuliano-Miotto-150x150.png" class="foto-colunista" alt="Giuliano F. Miotto" loading="lazy" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2015/04/Advogado-Giuliano-Miotto-150x150.png 150w, https://www.rotajuridica.com.br/wp-content/uploads/2015/04/Advogado-Giuliano-Miotto-300x300.png 300w, https://www.rotajuridica.com.br/wp-content/uploads/2015/04/Advogado-Giuliano-Miotto.png 356w" sizes="auto, (max-width: 150px) 100vw, 150px" /><span>Biblioteca Jurídica</span></a></li>
+											<li><a href="coluna.html"><img class="foto-colunista" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/03/danubio-remy-200px.jpg" width="32" height="32" loading="lazy" alt="DANÚBIO CARDOSO REMY ROMANO FRAUZINO"><span>Rota com Danúbio Remy</span></a></li>
+									</ul>
+			</li>
+							<li class="menu__item tem-sub">
+					<a href="editoria.html">Justiça<svg class="menu__seta" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+											<ul class="menu__sub">
+															<li><a href="editoria.html">Justiça do Trabalho</a></li>
+															<li><a href="editoria.html">Justiça Eleitoral</a></li>
+															<li><a href="editoria.html">Justiça Estadual</a></li>
+															<li><a href="editoria.html">Justiça Federal</a></li>
+													</ul>
+									</li>
+							<li class="menu__item tem-sub">
+					<a href="editoria.html">Ministério Público<svg class="menu__seta" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+											<ul class="menu__sub">
+															<li><a href="editoria.html">Ministério Público do Trabalho</a></li>
+															<li><a href="editoria.html">Ministério Público Estadual</a></li>
+															<li><a href="editoria.html">Ministério Público Federal</a></li>
+													</ul>
+									</li>
+							<li class="menu__item">
+					<a href="editoria.html">OAB</a>
+									</li>
+							<li class="menu__item">
+					<a href="editoria.html">Executivo</a>
+									</li>
+							<li class="menu__item">
+					<a href="editoria.html">Legislativo</a>
+									</li>
+							<li class="menu__item">
+					<a href="editoria.html">Nacionais</a>
+									</li>
+							<li class="menu__item">
+					<a href="editoria.html">CNJ</a>
+									</li>
+						<li class="menu__item"><a href="artigos.html">Artigos</a></li>
+			<li class="menu__item"><a href="tv.html">Jurídica TV</a></li>
+			<li class="menu__busca"><form class="busca" role="search" method="get" action="busca.html">
+		<label class="sr" for="s-2">Buscar</label>
+	<input id="s-2" type="search" name="s" value="" placeholder="Buscar no portal">
+	<button type="submit">Buscar</button>
+</form>
+</li>
+			<li class="menu__redes"><ul class="redes" aria-label="Redes sociais da Rota Jurídica">
+			<li><a class="redes__link" href="https://www.instagram.com/rotajuridica/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3"/></svg></a></li>
+			<li><a class="redes__link" href="https://www.facebook.com/RotaJuridica" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg></a></li>
+			<li><a class="redes__link" href="https://x.com/rotajuridica" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X (Twitter)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></li>
+			<li><a class="redes__link" href="https://api.whatsapp.com/send?phone=5562999001860&#038;text=Gostaria%20receber%20not%C3%ADcias%20do%20Rota%20Jur%C3%ADdica%20no%20Whatsapp%21" target="_blank" rel="noopener" aria-label="WhatsApp: receba as notícias" title="WhatsApp: receba as notícias"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.1 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.9 4.5 4 2.2.9 2.7.7 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.3 0-.5z"/></svg></a></li>
+	</ul>
+</li>
+		</ul>
+	</nav>
+</header>
+
+<main id="conteudo">
+<div class="wrap">
+	<h1 class="sr">Rota Jurídica: </h1>
+	<aside class="ad ad--topo ad--faixa" style="--ad-w:728px;--ad-h:90px" aria-label="Publicidade" data-medida="728×90"></aside>
+	<article class="card card--manchete post-180202 post type-post status-publish format-standard has-post-thumbnail hentry category-justica-federal localizacao-destaque-1 localizacao-destaque-newsletter">
+		<p class="rotulo">Moradia compartilhada</p>
+	<h2 class="card__titulo"><a href="noticia.html">Mulher que mora com os filhos no imóvel do ex-cônjuge não precisa pagar aluguel, decide STJ</a></h2>
+	<p class="card__resumo">Para a Terceira Turma, o uso do imóvel como moradia dos filhos em comum atende ao dever de sustento de ambos os pais e não configura enriquecimento sem causa, mesmo quando o bem pertence exclusivamente a um dos ex-cônjuges.</p>	<p class="card__meta"><time datetime="2026-11-04T07:44:11-03:00" data-relativo>4 de novembro, 07h44</time> · Em Justiça Federal</p>
+</article>
+
+	<section class="capa" aria-label="Destaques do dia">
+		<div class="capa__lead"><article class="card card--lead post-180197 post type-post status-publish format-standard has-post-thumbnail hentry category-justica-do-trabalho localizacao--noticia-com-foto localizacao-newsletter">
+	<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true">
+		<img width="1013" height="675" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing.jpg" class="attachment-rota-lead size-rota-lead wp-post-image" alt="" fetchpriority="high" sizes="(min-width: 1024px) 500px, 100vw" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing.jpg 1500w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing-300x200.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing-1024x683.jpg 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing-768x512.jpg 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing-630x420.jpg 630w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing-696x464.jpg 696w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing-1068x712.jpg 1068w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/telemarketing-1320x880.jpg 1320w" />	</a>
+	<div class="card__texto">
+			<p class="rotulo">Assédio organizacional</p>
+		<h2 class="card__titulo"><a href="noticia.html">TRT-GO condena empresa por controlar uso do banheiro e pressionar atendente por metas</a></h2>
+		<p class="card__meta"><time datetime="2026-11-04T07:24:22-03:00" data-relativo>4 de novembro, 07h24</time> · Em Justiça do Trabalho</p>
+	</div>
+</article>
+</div>
+		<aside class="capa__lateral"><aside class="ad ad--capa_1 " style="--ad-w:368px;--ad-h:290px" aria-label="Publicidade" data-medida="368×290"></aside></aside>
+		<div class="capa__apoio"><article class="card card--mini post-180208 post type-post status-publish format-standard has-post-thumbnail hentry category-oab localizacao-destaque-4 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="323" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Jaco-Coelho.png" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="eager" sizes="(min-width: 720px) 360px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Jaco-Coelho.png 673w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Jaco-Coelho-269x300.png 269w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Jaco-Coelho-377x420.png 377w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Pela Editora Arraes</p>
+		<h3 class="card__titulo"><a href="noticia.html">Advogado Jacó Coelho lança livro sobre custeio de tratamentos experimentais por planos de saúde</a></h3>
+		<p class="card__meta"><time datetime="2026-11-04T08:25:45-03:00" data-relativo>4 de novembro, 08h25</time> · Em OAB</p>
+	</div>
+</article>
+<article class="card card--mini post-180205 post type-post status-publish format-standard has-post-thumbnail hentry category-justica-estadual localizacao-destaque-4 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="626" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/WhatsApp-2.webp" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="eager" sizes="(min-width: 720px) 360px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/WhatsApp-2.webp 730w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/WhatsApp-2-300x173.webp 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/WhatsApp-2-696x400.webp 696w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Liminar</p>
+		<h3 class="card__titulo"><a href="noticia.html">Juíza determina reativação de WhatsApp de construtora após Meta negar revisão de banimento</a></h3>
+		<p class="card__meta"><time datetime="2026-11-04T08:13:44-03:00" data-relativo>4 de novembro, 08h13</time> · Em Justiça Estadual</p>
+	</div>
+</article>
+<article class="card card--mini post-180191 post type-post status-publish format-standard has-post-thumbnail hentry category-oab localizacao-destaque-4 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="480" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/representantes-da-oab.jpeg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="eager" sizes="(min-width: 720px) 360px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/representantes-da-oab.jpeg 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/representantes-da-oab-300x225.jpeg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/representantes-da-oab-768x576.jpeg 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/representantes-da-oab-560x420.jpeg 560w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/representantes-da-oab-80x60.jpeg 80w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/representantes-da-oab-696x522.jpeg 696w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/representantes-da-oab-265x198.jpeg 265w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Competência delegada</p>
+		<h3 class="card__titulo"><a href="noticia.html">Após atuação da OAB-GO, processos previdenciários continuarão tramitando na comarca de Aragarças</a></h3>
+		<p class="card__meta"><time datetime="2026-11-04T06:59:13-03:00" data-relativo>4 de novembro, 06h59</time> · Em OAB</p>
+	</div>
+</article>
+<article class="card card--mini post-180194 post type-post status-publish format-standard has-post-thumbnail hentry category-legislativo localizacao-destaque-4 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="602" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/senado.webp" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="eager" sizes="(min-width: 720px) 360px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/senado.webp 1170w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/senado-300x179.webp 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/senado-1024x613.webp 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/senado-768x459.webp 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/senado-702x420.webp 702w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/senado-696x416.webp 696w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/senado-1068x639.webp 1068w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">De autoria do Executivo</p>
+		<h3 class="card__titulo"><a href="noticia.html">Senado aprova por unanimidade PEC da Segurança Pública sem redução da maioridade penal</a></h3>
+		<p class="card__meta"><time datetime="2026-11-04T06:35:31-03:00" data-relativo>4 de novembro, 06h35</time> · Em Legislativo</p>
+	</div>
+</article>
+<article class="card card--mini post-180218 post type-post status-publish format-standard has-post-thumbnail hentry category-nacionais localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="640" height="320" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/12/prescricao-virtual.webp" class="attachment-rota-card size-rota-card wp-post-image" alt="TST define que prescrição trabalhista não pode ser reconhecida de ofício pelo juiz" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2025/12/prescricao-virtual.webp 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2025/12/prescricao-virtual-300x150.webp 300w, https://www.rotajuridica.com.br/wp-content/uploads/2025/12/prescricao-virtual-768x384.webp 768w, https://www.rotajuridica.com.br/wp-content/uploads/2025/12/prescricao-virtual-840x420.webp 840w, https://www.rotajuridica.com.br/wp-content/uploads/2025/12/prescricao-virtual-696x348.webp 696w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Ação de 2019</p>
+		<h3 class="card__titulo"><a href="noticia.html">Bradesco tem execução extinta por prescrição após bloqueio de passaporte e CNH sem citação do devedor</a></h3>
+				<p class="card__meta"><time datetime="2026-11-04T10:35:21-03:00" data-relativo>4 de novembro, 10h35</time> · Em Nacionais</p>
+	</div>
+</article>
+<article class="card card--mini post-180213 post type-post status-publish format-standard has-post-thumbnail hentry category-legislativo localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="474" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade.jpg 1600w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-300x228.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-1024x778.jpg 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-768x584.jpg 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-1536x1167.jpg 1536w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-553x420.jpg 553w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-80x60.jpg 80w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-696x529.jpg 696w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-1068x812.jpg 1068w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Romaria-de-Trindade-1320x1003.jpg 1320w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Em Trindade-GO</p>
+		<h3 class="card__titulo"><a href="noticia.html">Comissão do Senado aprova reconhecimento da Romaria do Divino Pai Eterno como manifestação da cultura nacional</a></h3>
+				<p class="card__meta"><time datetime="2026-11-04T08:44:50-03:00" data-relativo>4 de novembro, 08h44</time> · Em Legislativo</p>
+	</div>
+</article>
+<article class="card card--mini post-180142 post type-post status-publish format-standard has-post-thumbnail hentry category-nacionais localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="307" height="164" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/08/Execucao-extinta.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="TJGO extingue execução contra coexecutado após 14 anos sem diligências para localizar bens" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2025/08/Execucao-extinta.jpg 307w, https://www.rotajuridica.com.br/wp-content/uploads/2025/08/Execucao-extinta-300x160.jpg 300w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">No Pará</p>
+		<h3 class="card__titulo"><a href="noticia.html">Prescrição intercorrente: execução do Banco do Brasil iniciada em 1998 é extinta pela Justiça</a></h3>
+				<p class="card__meta"><time datetime="2026-11-04T07:35:39-03:00" data-relativo>4 de novembro, 07h35</time> · Em Nacionais</p>
+	</div>
+</article>
+<article class="card card--mini post-180188 post type-post status-publish format-standard has-post-thumbnail hentry category-justica localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="626" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Desclieux-Ferreira-da-Silva-Junior.webp" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Desclieux-Ferreira-da-Silva-Junior.webp 730w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Desclieux-Ferreira-da-Silva-Junior-300x173.webp 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Desclieux-Ferreira-da-Silva-Junior-696x400.webp 696w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Merecimento</p>
+		<h3 class="card__titulo"><a href="noticia.html">Órgão Especial escolhe Desclieux Ferreira da Silva Júnior como novo desembargador do TJGO</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T16:48:46-03:00" data-relativo>3 de novembro, 16h48</time> · Em Justiça</p>
+	</div>
+</article>
+
+</div>
+	</section>
+
+	<section class="apoio" aria-labelledby="t-apoio" data-carrossel>
+	<header class="apoio__cab">
+		<h2 class="apoio__titulo" id="t-apoio"><a href="apoiadores.html">Apoiadores</a></h2>
+		<div class="apoio__setas">
+			<button type="button" class="apoio__seta" data-dir="-1" aria-label="Apoiadores anteriores"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m14.5 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+			<button type="button" class="apoio__seta apoio__pausa" aria-pressed="false" aria-label="Pausar a rolagem dos apoiadores"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><rect x="6.5" y="5" width="3.5" height="14" rx="1"/><rect x="14" y="5" width="3.5" height="14" rx="1"/></svg><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+			<button type="button" class="apoio__seta" data-dir="1" aria-label="Próximos apoiadores"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+		</div>
+	</header>
+	<ul class="apoio__trilho" tabindex="0" aria-label="Logos dos apoiadores" data-embaralhar>
+					<li class="apoio__item">
+				<a href="https://amaralemelo.com/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/07/logo-a-e-m-advogados-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="a e m advogados" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/adrianonaves.adv?igsh=MXY4c3A3NnR2OG54&#038;utm_source=qr" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/01/logo-adriano-naves-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="adriano naves" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://agnaldobastos.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2018/12/agnaldo-bastos-dez-2018.jpg" class="attachment-medium size-medium wp-post-image" alt="Agnaldo Bastos" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/alessandrareisadvogados/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/10/logo-alessandra-reis-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="alessandra reis" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.rotajuridica.com.br/apoiadores/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2020/08/logo-alex-neder-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="alex neder" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/alvares.advocacia" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2024/10/logo-alvares-advocacia-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="alvares" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/castroesilveiraadvocacia?utm_source=ig_web_button_share_sheet&#038;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2024/01/logo-castro-silveira-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="alvares advocacia" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://amaralemelo.com/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/07/logo-amaral-melo-branca-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="amaral e melo" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.amorimecastro.com/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2016/06/11-amorim-castro.jpg" class="attachment-medium size-medium wp-post-image" alt="Amorim e Castro" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://advbacellar.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/12/logo-araujo-e-bacelar-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="araujo e bacellar" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.mesquitabastos.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/08/arlete-mesquita-rodrigo-bastos-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="arlete mesquita e rodrigo bastos" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/arturcamapum/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/06/artur-camapum-advogados-associados-275x177-logo-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="artur camapum" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://bareato.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/01/275x177-logo-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="bareato" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://beneditotorres.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/03/logo-benedito-torres-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="benedito torres" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.bezerraecaldeira.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/05/logo-bezerra-caldeira-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="bezerra e caldeira" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.brasilsalomao.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/11/logo-brasil-salomao-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="brasil salomao" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://cabraladv.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/05/logo-cabral-advocacia-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="cabral advocacia" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/camillacrisostomo/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2024/02/camila-crisostomo-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="camilla crisostomo" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://capitalcalculos.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2022/03/logo-capital-calculos-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="Capital Calculos" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.facebook.com/ccsadvogados" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2019/04/logo-celso-candido-de-souza-advogados-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="Celso Cândido de Souza Advogados" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/cobcon_/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/03/logo-cobcon-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="cobcon" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.dfnadvocacia.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/09/logo-daniel-fernandes-noleto-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="daniel fernandes noleto" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/daniiellegomess" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/08/logo-danielle-gomes-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="danielle gomes" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/danilovasconcelos.adv/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2024/12/logo-danilo-vasconcelos-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="danilo vasconcelos" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://diaseamaral.adv.br/" target="_blank" rel="noopener sponsored"><img width="279" height="180" src="https://www.rotajuridica.com.br/wp-content/uploads/2017/10/dias-amaral.jpg" class="attachment-medium size-medium wp-post-image" alt="Dias &#038; Amaral" loading="lazy" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2017/10/dias-amaral.jpg 279w, https://www.rotajuridica.com.br/wp-content/uploads/2017/10/dias-amaral-275x177.jpg 275w" sizes="auto, (max-width: 279px) 100vw, 279px" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://sena.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/06/logo-felicissimo-sena-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="felicissimo sena" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://fptaadvocacia.com/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2019/01/FPTA-Advocacia-Banner.png" class="attachment-medium size-medium wp-post-image" alt="Fernando de Paula &#038; Telmo de Alencastro" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://flaviocardosoadv.com.br/home" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/10/logo-flavio-cardoso-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="flavio cardoso" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://gillesgomes.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2021/12/logo-gilles-gomes-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="gilles gomes" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.gmpr.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2018/11/logo-gmpr-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="GMPR" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.idei.com.br/index.php" target="_blank" rel="noopener sponsored"><img width="300" height="198" src="https://www.rotajuridica.com.br/wp-content/uploads/2015/06/idei_instituto-300x198.jpg" class="attachment-medium size-medium wp-post-image" alt="IDEI" loading="lazy" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2015/06/idei_instituto-300x198.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2015/06/idei_instituto.jpg 375w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.rotajuridica.com.br/apoiadores/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2016/06/12-iris-bento.jpg" class="attachment-medium size-medium wp-post-image" alt="Iris Bento Tavares" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/advocacia_leonardocouto?igsh=MXF0Z3I4Y2l0cWhkYg%3D%3D&#038;utm_source=qr" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/05/logo-izana-couto-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="Izana Couto" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://jacocoelho.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/10/logo-jaco-coelho-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="jacó coelho advogados" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/jhonatas.souza.adv?utm_source=qr" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/08/275x177-logo-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="jhonatas souza" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.joaodomingosadv.com/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2017/11/joao-domingos-advogados-associados.jpg" class="attachment-medium size-medium wp-post-image" alt="João Domingos" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.facebook.com/juscimarribeiroassessoriajuridica/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2022/03/Juscimar-Ribeiro-Advocacia-275x177-logo-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="Juscimar Ribeiro Advocacia" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://kowalsky.adv.br/escritorio" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2024/09/logo-kowalsky-275x177-apoiadores-rota-juridica-1.png" class="attachment-medium size-medium wp-post-image" alt="kowalsky" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/advocacia_leonardocouto?igsh=MXF0Z3I4Y2l0cWhkYg%3D%3D&#038;utm_source=qr" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/05/logo-leonardo-couto-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="leonardo couto vilela" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/lucianorezendeadvogados/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/09/logo-luciano-rezende-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="luciano rezende" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://mgurgel.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/03/logo-m-gurgel-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="M Gurgel" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://mardenefraga.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2019/03/logo-marden-e-fraga-275x177.png" class="attachment-medium size-medium wp-post-image" alt="Marden e Fraga" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.mlpc.adv.br/v2/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/08/logo-maria-luiza-povoa-cruz-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="maria luiza povoa cruz" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.mmfsociedade.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/08/logo-marinho-morais-fernandes-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="marinho morais e fernandes" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://merolaeribas.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2024/07/logo-merola-ribas-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="merola e ribas" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/mmbadvogados?igsh=MW9pN2d5eGM0N3FlcA==" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/03/logo-moura-mussi-bertoni-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="moura mussi bertoni" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.mrtb.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2019/12/275x177-logo-logo-mrtb-advogados.png" class="attachment-medium size-medium wp-post-image" alt="mrtb" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://otolima.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2024/08/logo-oto-lima-ago-2025-apoiadores-rota-juridica-275x177-1.png" class="attachment-medium size-medium wp-post-image" alt="oto lima" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/renan.vilela.adv?igsh=enA2YXFzaXlnZXE4&#038;utm_source=qr" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/07/logo-renan-vilela-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="renan vilela" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.ribeiroesilvadvogados.com/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/05/logo-ribeiro-e-silva-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="ribeiro e silva" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://rogerioleal.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/06/logo-rogerio-leal-advogados-associados-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="rogerio leal" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://stenius.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/10/logomarca-275x177-apoiadores-stenius-03.png" class="attachment-medium size-medium wp-post-image" alt="stenius" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://www.instagram.com/tartucecostamartins?igsh=aHFnNnYyaWE0dnVx&#038;utm_source=qr" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/08/logo-tartuce-275x177-logo-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="tartuce costa martins" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.tlbradvogados.com.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/02/logo-tlbr-advogados-275x177-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="tartuce lenza brands e rodrigues" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="https://thiagomoraesadvogados.adv.br/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2020/02/logo-thiago-moraes-275x177-1.png" class="attachment-medium size-medium wp-post-image" alt="thiago moraes" loading="lazy" decoding="async" /></a>			</li>
+					<li class="apoio__item">
+				<a href="http://www.witeradvogados.com/" target="_blank" rel="noopener sponsored"><img width="275" height="177" src="https://www.rotajuridica.com.br/wp-content/uploads/2018/11/witer-de-siqueira-e-pessoni-advogados-275x177-logo-apoiadores-rota-juridica.png" class="attachment-medium size-medium wp-post-image" alt="Witer DeSiqueira" loading="lazy" decoding="async" /></a>			</li>
+			</ul>
+</section>
+
+	<section class="bloco" aria-labelledby="t-colunas">
+		<header class="bloco__cab"><h2 class="bloco__titulo" id="t-colunas">Colunas</h2></header>
+		<div class="colunas-faixa">
+							<article class="coluna-card">
+					<a class="coluna-card__foto" href="coluna.html" tabindex="-1" aria-hidden="true"><img class="foto-colunista" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/04/gilles-gomes-abril-2026.jpeg" width="72" height="72" loading="lazy" alt="Gilles Gomes"></a>
+					<p class="rotulo"><a href="coluna.html">Defesa Criminal</a></p>
+					<h3 class="card__titulo"><a href="coluna-texto.html">O que muda após a aprovação da PEC da Segurança Pública?</a></h3>
+					<p class="card__meta">Gilles Gomes · 4 de novembro de 2026</p>
+				</article>
+							<article class="coluna-card">
+					<a class="coluna-card__foto" href="coluna.html" tabindex="-1" aria-hidden="true"><img class="foto-colunista" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/05/artur-siqueira.jpeg" width="72" height="72" loading="lazy" alt="Artur Siqueira"></a>
+					<p class="rotulo"><a href="coluna.html">Rotas do Agronegócio</a></p>
+					<h3 class="card__titulo"><a href="coluna-texto.html">Bloqueio de valores por dano moral coletivo em ACPs ambientais: o que está em jogo para o agronegócio</a></h3>
+					<p class="card__meta">Artur Siqueira · 2 de novembro de 2026</p>
+				</article>
+							<article class="coluna-card">
+					<a class="coluna-card__foto" href="coluna.html" tabindex="-1" aria-hidden="true"><img width="72" height="72" src="https://www.rotajuridica.com.br/wp-content/uploads/2017/10/witer-2017.jpg" class="foto-colunista" alt="Witer DeSiqueira" loading="lazy" decoding="async" /></a>
+					<p class="rotulo"><a href="coluna.html">USA Fácil</a></p>
+					<h3 class="card__titulo"><a href="coluna-texto.html">Visto humanitário nos Estados Unidos: o caso Flávio Bolsonaro e o que a lei americana realmente permite</a></h3>
+					<p class="card__meta">Witer DeSiqueira · 31 de outubro de 2026</p>
+				</article>
+							<article class="coluna-card">
+					<a class="coluna-card__foto" href="coluna.html" tabindex="-1" aria-hidden="true"><img width="72" height="72" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/08/agnaldo-bastos-agosto-2026-150x150.jpg" class="foto-colunista" alt="Agnaldo Bastos" loading="lazy" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/08/agnaldo-bastos-agosto-2026-150x150.jpg 150w, https://www.rotajuridica.com.br/wp-content/uploads/2026/08/agnaldo-bastos-agosto-2026-300x300.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/08/agnaldo-bastos-agosto-2026.jpg 400w" sizes="auto, (max-width: 150px) 100vw, 150px" /></a>
+					<p class="rotulo"><a href="coluna.html">Advocacia dos Concursos</a></p>
+					<h3 class="card__titulo"><a href="coluna-texto.html">Quem justifica o voto pode fazer concurso público e tomar posse? Entenda as regras após as Eleições 2026</a></h3>
+					<p class="card__meta">Agnaldo Bastos · 30 de outubro de 2026</p>
+				</article>
+							<article class="coluna-card">
+					<a class="coluna-card__foto" href="coluna.html" tabindex="-1" aria-hidden="true"><span class="foto-colunista foto-colunista--vazia" aria-hidden="true">MS</span></a>
+					<p class="rotulo"><a href="coluna.html">Direito do Cidadão</a></p>
+					<h3 class="card__titulo"><a href="coluna-texto.html">Informativo &#8211; Dia 11 de agosto de 2025</a></h3>
+					<p class="card__meta">Marilia Costa e Silva · 11 de agosto de 2025</p>
+				</article>
+							<article class="coluna-card">
+					<a class="coluna-card__foto" href="coluna.html" tabindex="-1" aria-hidden="true"><img class="foto-colunista" src="https://www.rotajuridica.com.br/wp-content/uploads/2023/03/danubio-remy-200px.jpg" width="72" height="72" loading="lazy" alt="DANÚBIO CARDOSO REMY ROMANO FRAUZINO"></a>
+					<p class="rotulo"><a href="coluna.html">Rota com Danúbio Remy</a></p>
+					<h3 class="card__titulo"><a href="coluna-texto.html">Direito eleitoral como instrumento da democracia</a></h3>
+					<p class="card__meta">DANÚBIO CARDOSO REMY ROMANO FRAUZINO · 11 de setembro de 2023</p>
+				</article>
+					</div>
+	</section>
+
+	<section class="fluxo" aria-labelledby="t-fluxo">
+		<h2 class="sr" id="t-fluxo">Últimas notícias</h2>
+		<div class="fluxo__lista"><article class="card card--feed post-180178 post type-post status-publish format-standard has-post-thumbnail hentry category-justica-do-trabalho localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="540" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2019/11/Saneago-2.jpeg" class="attachment-rota-card size-rota-card wp-post-image" alt="Assembleia Legislativa de Goiás analisa projeto que cria o Dia do Advogado da Saneago" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2019/11/Saneago-2.jpeg 1920w, https://www.rotajuridica.com.br/wp-content/uploads/2019/11/Saneago-2-300x200.jpeg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2019/11/Saneago-2-768x512.jpeg 768w, https://www.rotajuridica.com.br/wp-content/uploads/2019/11/Saneago-2-1024x683.jpeg 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2019/11/Saneago-2-696x464.jpeg 696w, https://www.rotajuridica.com.br/wp-content/uploads/2019/11/Saneago-2-1068x712.jpeg 1068w, https://www.rotajuridica.com.br/wp-content/uploads/2019/11/Saneago-2-630x420.jpeg 630w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Goiânia</p>
+		<h3 class="card__titulo"><a href="noticia.html">Vara do Trabalho mantém justa causa de ex-superintendente da Saneago e punições a outros empregados</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T15:51:07-03:00" data-relativo>3 de novembro, 15h51</time> · Em Justiça do Trabalho</p>
+	</div>
+</article>
+<article class="card card--feed post-180174 post type-post status-publish format-standard has-post-thumbnail hentry category-oab localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="540" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2.webp" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2.webp 1500w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2-300x200.webp 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2-1024x683.webp 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2-768x512.webp 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2-630x420.webp 630w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2-696x464.webp 696w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2-1068x712.webp 1068w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/direito-medico-2-1320x880.webp 1320w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Início em fevereiro</p>
+		<h3 class="card__titulo"><a href="noticia.html">UFG prorroga até 6 de novembro inscrições para especialização em Direito Médico e Saúde</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T15:09:41-03:00" data-relativo>3 de novembro, 15h09</time> · Em OAB</p>
+	</div>
+</article>
+<article class="card card--feed post-180171 post type-post status-publish format-standard has-post-thumbnail hentry category-oab localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="577" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/11/Inteligencia-Artificial-judiciario.webp" class="attachment-rota-card size-rota-card wp-post-image" alt="TJGO TRT-GO nota técnica Inteligência Artificial parceria" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2025/11/Inteligencia-Artificial-judiciario.webp 990w, https://www.rotajuridica.com.br/wp-content/uploads/2025/11/Inteligencia-Artificial-judiciario-300x187.webp 300w, https://www.rotajuridica.com.br/wp-content/uploads/2025/11/Inteligencia-Artificial-judiciario-768x479.webp 768w, https://www.rotajuridica.com.br/wp-content/uploads/2025/11/Inteligencia-Artificial-judiciario-673x420.webp 673w, https://www.rotajuridica.com.br/wp-content/uploads/2025/11/Inteligencia-Artificial-judiciario-696x434.webp 696w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Inscrições abertas</p>
+		<h3 class="card__titulo"><a href="noticia.html">Curso da UFG sobre Inteligência Artificial aplicada ao Direito tem últimas 30 vagas disponíveis</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T09:44:05-03:00" data-relativo>3 de novembro, 09h44</time> · Em OAB</p>
+	</div>
+</article>
+<article class="card card--feed post-180169 post type-post status-publish format-standard has-post-thumbnail hentry category-legislativo localizacao-newsletter localizacao-sem-foto">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="585" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2019/05/cães-e-gatos.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="cães gatos criminalização acorrentamento PL" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2019/05/cães-e-gatos.jpg 600w, https://www.rotajuridica.com.br/wp-content/uploads/2019/05/cães-e-gatos-300x185.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2019/05/cães-e-gatos-356x220.jpg 356w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Até R$ 2.275,08</p>
+		<h3 class="card__titulo"><a href="noticia.html">Senador propõe dedução no imposto de renda de parte dos gastos com saúde de cães e gatos</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T09:02:14-03:00" data-relativo>3 de novembro, 09h02</time> · Em Legislativo</p>
+	</div>
+</article>
+<article class="card card--feed post-180167 post type-post status-publish format-standard has-post-thumbnail hentry category-legislativo localizacao-newsletter localizacao-sem-foto">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="536" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2019/10/vagas-de-estacionamento.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="estacionamento reserva vaga gratuita" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2019/10/vagas-de-estacionamento.jpg 640w, https://www.rotajuridica.com.br/wp-content/uploads/2019/10/vagas-de-estacionamento-300x202.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2019/10/vagas-de-estacionamento-625x420.jpg 625w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Durante o expediente</p>
+		<h3 class="card__titulo"><a href="noticia.html">Projeto proíbe cobrança de estacionamento de quem trabalha em centros comerciais e shoppings</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T08:48:51-03:00" data-relativo>3 de novembro, 08h48</time> · Em Legislativo</p>
+	</div>
+</article>
+<article class="card card--feed post-180165 post type-post status-publish format-standard has-post-thumbnail hentry category-justica-eleitoral localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="546" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2021/04/Julio-Meirelles-2-1.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2021/04/Julio-Meirelles-2-1.jpg 640w, https://www.rotajuridica.com.br/wp-content/uploads/2021/04/Julio-Meirelles-2-1-300x198.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2021/04/Julio-Meirelles-2-1-637x420.jpg 637w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Decisão do TSE</p>
+		<h3 class="card__titulo"><a href="noticia.html">Condenação por violência contra mulher pode impedir candidatura, mas medida não é automática, explica advogado</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T08:18:06-03:00" data-relativo>3 de novembro, 08h18</time> · Em Justiça Eleitoral</p>
+	</div>
+</article>
+</div>
+		<aside class="fluxo__lateral"><aside class="ad ad--capa_2 " style="--ad-w:368px;--ad-h:445px" aria-label="Publicidade" data-medida="368×445"></aside><aside class="ad ad--capa_3 " style="--ad-w:368px;--ad-h:445px" aria-label="Publicidade" data-medida="368×445"></aside></aside>
+	</section>
+
+	<section class="bloco" aria-labelledby="t-artigos">
+		<header class="bloco__cab"><h2 class="bloco__titulo" id="t-artigos">Artigos jurídicos</h2><a class="bloco__mais" href="artigos.html">Ver todos</a></header>
+		<div class="colunas-faixa"><article class="coluna-card post-180217 artigos type-artigos status-publish has-post-thumbnail hentry">
+	<a class="coluna-card__foto" href="artigo.html" tabindex="-1" aria-hidden="true"><img width="72" height="72" src="https://www.rotajuridica.com.br/wp-content/uploads/2015/10/juiz-fernando-augusto-chach-de-rezende-150x150.jpg" class="foto-colunista wp-post-image" alt="" loading="lazy" decoding="async" /></a>
+	<p class="rotulo">Fernando Augusto Chacha de Rezende</p>
+	<h3 class="card__titulo"><a href="artigo.html">Título extrajudicial e título judicial da prisão: a autonomia da prisão preventiva e a incomunicabilidade dos vícios do flagrante</a></h3>
+	<p class="card__data">4 de novembro de 2026</p>
+</article>
+<article class="coluna-card coluna-card--autores">
+	<a class="autores" href="artigo.html" tabindex="-1" aria-hidden="true">
+		<img class="autores__foto" src="https://www.rotajuridica.com.br/wp-content/uploads/2016/07/Advogado-Amadeu-Garrido-150x150.jpg" width="56" height="56" alt=""><img class="autores__foto" src="https://www.rotajuridica.com.br/wp-content/uploads/2015/04/Advogado-Giuliano-Miotto-150x150.png" width="56" height="56" alt=""><img class="autores__foto" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Flavio-Pascarelli-150x150.jpg" width="56" height="56" alt="">
+	</a>
+	<p class="rotulo">Amadeu Garrido, Giuliano F. Miotto e Flávio Pascarelli</p>
+	<h3 class="card__titulo"><a href="artigo.html">Título do artigo assinado em conjunto pelos três autores</a></h3>
+	<p class="card__data">3 de novembro de 2026</p>
+</article>
+<article class="coluna-card post-180110 artigos type-artigos status-publish has-post-thumbnail hentry localizacao-newsletter">
+	<a class="coluna-card__foto" href="artigo.html" tabindex="-1" aria-hidden="true"><img width="72" height="72" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/WhatsApp-Image-2026-10-20-at-13.45.20-1-150x150.jpeg" class="foto-colunista wp-post-image" alt="" loading="lazy" decoding="async" /></a>
+	<p class="rotulo">Giovanna de Brito Sant&#039;Anna Magalhães</p>
+	<h3 class="card__titulo"><a href="artigo.html">Imunidade do ITBI não se mede com laudo</a></h3>
+	<p class="card__data">1 de novembro de 2026</p>
+</article>
+<article class="coluna-card post-180091 artigos type-artigos status-publish has-post-thumbnail hentry localizacao-newsletter">
+	<a class="coluna-card__foto" href="artigo.html" tabindex="-1" aria-hidden="true"><img width="72" height="72" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/07/Ricardo-Menegatto-e1793449079838-150x150.jpg" class="foto-colunista wp-post-image" alt="" loading="lazy" decoding="async" /></a>
+	<p class="rotulo">Ricardo Menegatto</p>
+	<h3 class="card__titulo"><a href="artigo.html">Black Friday: falsos descontos e devoluções exigem atenção dos consumidores</a></h3>
+	<p class="card__data">31 de outubro de 2026</p>
+</article>
+<article class="coluna-card post-180064 artigos type-artigos status-publish has-post-thumbnail hentry">
+	<a class="coluna-card__foto" href="artigo.html" tabindex="-1" aria-hidden="true"><img width="72" height="72" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Julio-Cesar-Ballerini-Silva-150x150.jpg" class="foto-colunista wp-post-image" alt="" loading="lazy" decoding="async" /></a>
+	<p class="rotulo">Júlio César Ballerini Silva</p>
+	<h3 class="card__titulo"><a href="artigo.html">Além da agressão física: como a violência vicária desafia a Justiça brasileira</a></h3>
+	<p class="card__data">30 de outubro de 2026</p>
+</article>
+<article class="coluna-card post-180045 artigos type-artigos status-publish has-post-thumbnail hentry">
+	<a class="coluna-card__foto" href="artigo.html" tabindex="-1" aria-hidden="true"><img width="72" height="72" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Flavio-Pascarelli-150x150.jpg" class="foto-colunista wp-post-image" alt="" loading="lazy" decoding="async" /></a>
+	<p class="rotulo">Flávio Pascarelli</p>
+	<h3 class="card__titulo"><a href="artigo.html">O perigo silencioso dos vetos informais no Poder Judiciário</a></h3>
+	<p class="card__data">29 de outubro de 2026</p>
+</article>
+</div>
+	</section>
+	<section class="bloco" aria-labelledby="t-videos">
+		<header class="bloco__cab"><h2 class="bloco__titulo" id="t-videos">Vídeos</h2><a class="bloco__mais" href="video.html">Ver todos</a></header>
+		<div class="grade grade--videos-home"><article class="card card--video post-63904 tv type-tv status-publish format-standard hentry">
+	<a class="card__foto" href="video.html" tabindex="-1" aria-hidden="true"><img src="https://i.ytimg.com/vi/UKRX0x492lo/hqdefault.jpg" width="480" height="360" loading="lazy" alt=""><span class="card__play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></a>
+	<div class="card__texto">
+		<h3 class="card__titulo"><a href="video.html">O que fazer quando o trabalho em excesso compromete a vida pessoal?</a></h3>
+		
+	</div>
+</article><article class="card card--video post-61017 tv type-tv status-publish format-standard hentry">
+	<a class="card__foto" href="video.html" tabindex="-1" aria-hidden="true"><img src="https://i.ytimg.com/vi/O1DR_oj0G0E/hqdefault.jpg" width="480" height="360" loading="lazy" alt=""><span class="card__play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></a>
+	<div class="card__texto">
+		<h3 class="card__titulo"><a href="video.html">Alistamento militar: Quem deve fazer?</a></h3>
+		
+	</div>
+</article><article class="card card--video post-57894 tv type-tv status-publish format-standard hentry">
+	<a class="card__foto" href="video.html" tabindex="-1" aria-hidden="true"><img src="https://i.ytimg.com/vi/NEcxyq2NEG0/hqdefault.jpg" width="480" height="360" loading="lazy" alt=""><span class="card__play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></a>
+	<div class="card__texto">
+		<h3 class="card__titulo"><a href="video.html">ATC/GO divulga segundo vídeo em que mostra importância do registro da compra e venda de bens</a></h3>
+		
+	</div>
+</article><article class="card card--video post-57586 tv type-tv status-publish format-standard hentry">
+	<a class="card__foto" href="video.html" tabindex="-1" aria-hidden="true"><img src="https://i.ytimg.com/vi/OWuy8GdHLy0/hqdefault.jpg" width="480" height="360" loading="lazy" alt=""><span class="card__play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></a>
+	<div class="card__texto">
+		<h3 class="card__titulo"><a href="video.html">ATC/GO produz vídeos cômicos que mostram importância dos serviços cartorários</a></h3>
+		
+	</div>
+</article></div>
+	</section>
+	<section class="bloco" aria-labelledby="t-podcast">
+		<header class="bloco__cab"><h2 class="bloco__titulo" id="t-podcast">Podcast</h2><a class="bloco__mais" href="podcast.html">Todos os episódios e plataformas</a></header>
+		<div class="grade grade--podcast"><article class="ep">
+  <div class="ep__capa"><img src="rota/assets/img/logo-negativo.svg" alt=""><span>Ep. 3</span></div>
+  <div class="ep__texto"><p class="rotulo">Entrevista</p><h3 class="card__titulo"><a href="episodio.html">Título do episódio 3</a></h3>
+  <div class="ep__player"><button type="button" aria-label="Ouvir"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="ep__barra"><i style="width:0%"></i></span><span class="ep__tempo">18 min</span></div></div>
+</article><article class="ep">
+  <div class="ep__capa"><img src="rota/assets/img/logo-negativo.svg" alt=""><span>Ep. 2</span></div>
+  <div class="ep__texto"><p class="rotulo">Entrevista</p><h3 class="card__titulo"><a href="episodio.html">Título do episódio 2</a></h3>
+  <div class="ep__player"><button type="button" aria-label="Ouvir"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="ep__barra"><i style="width:35%"></i></span><span class="ep__tempo">24 min</span></div></div>
+</article><article class="ep">
+  <div class="ep__capa"><img src="rota/assets/img/logo-negativo.svg" alt=""><span>Ep. 1</span></div>
+  <div class="ep__texto"><p class="rotulo">Entrevista</p><h3 class="card__titulo"><a href="episodio.html">Título do episódio 1</a></h3>
+  <div class="ep__player"><button type="button" aria-label="Ouvir"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button><span class="ep__barra"><i style="width:70%"></i></span><span class="ep__tempo">15 min</span></div></div>
+</article></div>
+	</section>
+
+
+	<section class="fluxo" aria-label="Mais notícias">
+		<div class="fluxo__lista"><article class="card card--feed post-180157 post type-post status-publish format-standard has-post-thumbnail hentry category-nacionais localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="540" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/consulta-a-jurisprudencia.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/consulta-a-jurisprudencia.jpg 708w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/consulta-a-jurisprudencia-300x200.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/consulta-a-jurisprudencia-630x420.jpg 630w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/consulta-a-jurisprudencia-696x464.jpg 696w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Alucinação de IA</p>
+		<h3 class="card__titulo"><a href="noticia.html">STJ orienta advogados a consultar bases oficiais para evitar jurisprudências falsas geradas por IA</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T07:48:31-03:00" data-relativo>3 de novembro, 07h48</time> · Em Nacionais</p>
+	</div>
+</article>
+<article class="card card--feed post-180154 post type-post status-publish format-standard has-post-thumbnail hentry category-nacionais localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="489" height="326" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/balanca-e-drogas.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/balanca-e-drogas.jpg 489w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/balanca-e-drogas-300x200.jpg 300w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Temas Repetitivos</p>
+		<h3 class="card__titulo"><a href="noticia.html">STJ fixa cinco teses sobre quantidade de drogas no cálculo da pena por tráfico; confira o teor</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T07:45:42-03:00" data-relativo>3 de novembro, 07h45</time> · Em Nacionais</p>
+	</div>
+</article>
+<article class="card card--feed post-180151 post type-post status-publish format-standard has-post-thumbnail hentry category-justica-federal localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="473" height="354" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/balanca-e-martelo.webp" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/balanca-e-martelo.webp 473w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/balanca-e-martelo-300x225.webp 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/balanca-e-martelo-80x60.webp 80w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/balanca-e-martelo-265x198.webp 265w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Decisão do TRF1</p>
+		<h3 class="card__titulo"><a href="noticia.html">Anulada concessão de pensão por morte a filha por falta de citação de pensionista que já recebia o benefício</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T07:35:51-03:00" data-relativo>3 de novembro, 07h35</time> · Em Justiça Federal</p>
+	</div>
+</article>
+<article class="card card--feed post-180146 post type-post status-publish format-standard has-post-thumbnail hentry category-executivo localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="602" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/atendimento-ao-consumidor-2.webp" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/atendimento-ao-consumidor-2.webp 1170w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/atendimento-ao-consumidor-2-300x179.webp 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/atendimento-ao-consumidor-2-1024x613.webp 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/atendimento-ao-consumidor-2-768x459.webp 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/atendimento-ao-consumidor-2-702x420.webp 702w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/atendimento-ao-consumidor-2-696x416.webp 696w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/atendimento-ao-consumidor-2-1068x639.webp 1068w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Inclusive nos fins de semana</p>
+		<h3 class="card__titulo"><a href="noticia.html">Já estão valendo as novas regras do SAC que exigem atendimento humano e facilitam cancelamento de serviços</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T07:13:37-03:00" data-relativo>3 de novembro, 07h13</time> · Em Executivo</p>
+	</div>
+</article>
+<article class="card card--feed post-180144 post type-post status-publish format-standard has-post-thumbnail hentry category-justica-estadual localizacao-destaque-4 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="640" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim.jpg 1920w, https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim-300x169.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim-1024x576.jpg 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim-768x432.jpg 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim-1536x864.jpg 1536w, https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim-747x420.jpg 747w, https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim-696x392.jpg 696w, https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim-1068x601.jpg 1068w, https://www.rotajuridica.com.br/wp-content/uploads/2026/10/Jardins-Turim-1320x743.jpg 1320w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">No Jardins Turim</p>
+		<h3 class="card__titulo"><a href="noticia.html">TJGO suspende liminar que interrompia cobranças em contrato de imóvel com alienação fiduciária</a></h3>
+				<p class="card__meta"><time datetime="2026-11-03T07:09:10-03:00" data-relativo>3 de novembro, 07h09</time> · Em Justiça Estadual</p>
+	</div>
+</article>
+<article class="card card--feed post-180137 post type-post status-publish format-standard has-post-thumbnail hentry category-cnj localizacao-destaque-1 localizacao-destaque-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="560" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/bloqueio-de-bens-3.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/bloqueio-de-bens-3.jpg 799w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/bloqueio-de-bens-3-300x193.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/bloqueio-de-bens-3-768x494.jpg 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/bloqueio-de-bens-3-653x420.jpg 653w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/bloqueio-de-bens-3-696x448.jpg 696w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Sistema Integra</p>
+		<h3 class="card__titulo"><a href="noticia.html">CNJ vai monitorar cerca de 2,6 milhões de ordens judiciais de bloqueio de valores que precisam ser reavaliadas pelos tribunais</a></h3>
+		<p class="card__resumo">A iniciativa, que será feita por meio do Sistema Integra, busca dar mais efetividade à gestão dos bloqueios e evitar que valores permaneçam indisponíveis&hellip;</p>		<p class="card__meta"><time datetime="2026-11-03T06:35:47-03:00" data-relativo>3 de novembro, 06h35</time> · Em CNJ</p>
+	</div>
+</article>
+<article class="card card--feed post-180131 post type-post status-publish format-standard has-post-thumbnail hentry category-legislativo localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="540" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2025/10/Alego.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2025/10/Alego.jpg 800w, https://www.rotajuridica.com.br/wp-content/uploads/2025/10/Alego-300x200.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2025/10/Alego-768x512.jpg 768w, https://www.rotajuridica.com.br/wp-content/uploads/2025/10/Alego-630x420.jpg 630w, https://www.rotajuridica.com.br/wp-content/uploads/2025/10/Alego-696x464.jpg 696w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Reconhecimento</p>
+		<h3 class="card__titulo"><a href="noticia.html">PEC inclui Polícia Legislativa na Constituição de GO e muda aposentadoria da categoria</a></h3>
+				<p class="card__meta"><time datetime="2026-11-02T08:32:47-03:00" data-relativo>2 de novembro, 08h32</time> · Em Legislativo</p>
+	</div>
+</article>
+<article class="card card--feed post-180128 post type-post status-publish format-standard has-post-thumbnail hentry category-justica-federal localizacao-destaque-9 localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="540" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2015/05/aposentadoria-2.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2015/05/aposentadoria-2.jpg 622w, https://www.rotajuridica.com.br/wp-content/uploads/2015/05/aposentadoria-2-300x200.jpg 300w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Maioria de votos</p>
+		<h3 class="card__titulo"><a href="noticia.html">TNU limita incorporação de gratificação de cargo comissionado à aposentadoria de servidores federais</a></h3>
+				<p class="card__meta"><time datetime="2026-11-02T08:21:08-03:00" data-relativo>2 de novembro, 08h21</time> · Em Justiça Federal</p>
+	</div>
+</article>
+<article class="card card--feed post-180122 post type-post status-publish format-standard has-post-thumbnail hentry category-nacionais localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="541" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2015/09/martelo-da-justiça-3.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="recuperação judicial busca e apreensão maquinário essencial" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2015/09/martelo-da-justiça-3.jpg 549w, https://www.rotajuridica.com.br/wp-content/uploads/2015/09/martelo-da-justiça-3-300x199.jpg 300w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Tema 1.177</p>
+		<h3 class="card__titulo"><a href="noticia.html">União não paga honorários de sucumbência se for vencida em ação civil pública, confirma STJ</a></h3>
+				<p class="card__meta"><time datetime="2026-11-02T07:57:35-03:00" data-relativo>2 de novembro, 07h57</time> · Em Nacionais</p>
+	</div>
+</article>
+<article class="card card--feed post-180119 post type-post status-publish format-standard has-post-thumbnail hentry category-concursos localizacao-newsletter">
+			<a class="card__foto" href="noticia.html" tabindex="-1" aria-hidden="true"><img width="540" height="360" src="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania.jpg" class="attachment-rota-card size-rota-card wp-post-image" alt="" loading="lazy" fetchpriority="auto" sizes="auto, (min-width: 720px) 320px, 112px" decoding="async" srcset="https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania.jpg 2560w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-300x200.jpg 300w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-1024x683.jpg 1024w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-768x512.jpg 768w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-1536x1024.jpg 1536w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-2048x1366.jpg 2048w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-630x420.jpg 630w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-696x464.jpg 696w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-1068x712.jpg 1068w, https://www.rotajuridica.com.br/wp-content/uploads/2026/11/Abadiania-1320x880.jpg 1320w" /></a>
+		<div class="card__texto">
+			<p class="rotulo">Gestor jurídico</p>
+		<h3 class="card__titulo"><a href="noticia.html">Liminar proíbe novas contratações e determina convocação de aprovados em concurso em Abadiânia</a></h3>
+		<p class="card__resumo">Município terá 90 dias para nomear e dar posse aos aprovados para o cargo de gestor jurídico; contratos de serviços advocatícios questionados pelo MPGO&hellip;</p>		<p class="card__meta"><time datetime="2026-11-02T07:49:53-03:00" data-relativo>2 de novembro, 07h49</time> · Em Concursos</p>
+	</div>
+</article>
+</div>
+		<aside class="fluxo__lateral"><aside class="ad ad--capa_4 " style="--ad-w:300px;--ad-h:600px" aria-label="Publicidade" data-medida="300×600"></aside></aside>
+	</section>
+	<p class="fluxo__mais"><a href="ultimas.html">Ver todas as notícias</a></p>
+
+</div>
+</main>
+
+<footer class="rodape">
+	<div class="wrap rodape__grade">
+		<div>
+			<a class="marca marca--rodape" href="index.html" aria-label="Rota Jurídica">
+				<img class="marca__logo" src="rota/assets/img/logo-negativo.svg" width="186" height="48" alt="Rota Jurídica">
+			</a>
+			<p class="rodape__texto">O Portal Rota Jurídica é um portal independente com enfoque regionalizado. Fonte diária de leitura e consultas sobre informações na área da Justiça e do Direito desde 2012.</p>			<div class="rodape__redes"><ul class="redes" aria-label="Redes sociais da Rota Jurídica">
+			<li><a class="redes__link" href="https://www.instagram.com/rotajuridica/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3"/></svg></a></li>
+			<li><a class="redes__link" href="https://www.facebook.com/RotaJuridica" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg></a></li>
+			<li><a class="redes__link" href="https://x.com/rotajuridica" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X (Twitter)"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a></li>
+			<li><a class="redes__link" href="https://api.whatsapp.com/send?phone=5562999001860&#038;text=Gostaria%20receber%20not%C3%ADcias%20do%20Rota%20Jur%C3%ADdica%20no%20Whatsapp%21" target="_blank" rel="noopener" aria-label="WhatsApp: receba as notícias" title="WhatsApp: receba as notícias"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.1 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.9 4.5 4 2.2.9 2.7.7 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.3 0-.5z"/></svg></a></li>
+	</ul>
+</div>
+		</div>
+		<nav aria-label="Editorias">
+			<h2 class="rodape__titulo">Editorias</h2>
+			<ul>
+									<li><a href="editoria.html">Justiça</a></li>
+									<li><a href="editoria.html">Ministério Público</a></li>
+									<li><a href="editoria.html">OAB</a></li>
+									<li><a href="editoria.html">Executivo</a></li>
+									<li><a href="editoria.html">Legislativo</a></li>
+									<li><a href="editoria.html">Nacionais</a></li>
+									<li><a href="editoria.html">CNJ</a></li>
+							</ul>
+		</nav>
+		<nav aria-label="Colunas">
+			<h2 class="rodape__titulo">Colunas</h2>
+			<ul>
+									<li><a href="coluna.html">Advocacia dos Concursos</a></li>
+									<li><a href="coluna.html">Direito do Cidadão</a></li>
+									<li><a href="coluna.html">USA Fácil</a></li>
+									<li><a href="coluna.html">Rotas do Agronegócio</a></li>
+									<li><a href="coluna.html">Defesa Criminal</a></li>
+									<li><a href="coluna.html">Ponto de Vista</a></li>
+									<li><a href="coluna.html">Biblioteca Jurídica</a></li>
+									<li><a href="coluna.html">Rota com Danúbio Remy</a></li>
+							</ul>
+		</nav>
+		<nav aria-label="Portal">
+			<h2 class="rodape__titulo">Portal</h2>
+			<ul>
+				<li><a href="institucional.html">Institucional</a></li>
+				<li><a href="apoiadores.html">Apoiadores</a></li>
+				<li><a href="colabore.html">Colabore</a></li>
+				<li><a href="newsletter.html">Newsletter</a></li>
+				<li><a href="fale-conosco.html">Fale conosco</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="rodape__fim">
+		<div class="wrap rodape__fim-in">
+			<p>© 2026 Rota Jurídica. Todos os direitos reservados.</p>
+			<a class="assinatura" href="https://elevdigital.com.br/" target="_blank" rel="noopener" aria-label="Site desenvolvido pela Elev Digital">
+				<span>Desenvolvido por</span>
+				<img src="rota/assets/img/elev-digital.svg" width="58" height="24" alt="Elev Digital" loading="lazy">
+			</a>
+		</div>
+	</div>
+</footer>
+
+
+
+<script src="rota/assets/js/main.js"></script>
+<nav class="versoes" aria-label="Opções de cabeçalho"><a class="versoes__mapa" href="paginas.html">Todas as páginas</a><span>Cabeçalho</span>
+<button type="button" data-cab="claro" aria-pressed="true">Claro</button><button type="button" data-cab="escuro" aria-pressed="false">Escuro</button></nav>
+<style>.versoes{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:999;display:flex;align-items:center;gap:4px;padding:5px 5px 5px 16px;background:rgba(16,16,16,.92);border-radius:999px;box-shadow:0 8px 30px rgba(0,0,0,.25);font:500 13px Inter,system-ui,sans-serif;color:#9b968d;backdrop-filter:blur(6px)}
+.versoes span{margin-right:6px}
+.versoes button{padding:8px 18px;border:0;border-radius:999px;background:none;color:#cfc9bf;font:inherit;cursor:pointer}
+.versoes button:hover{color:#fff}
+.versoes button[aria-pressed=true]{background:#d49c28;color:#101010}
+@media print{.versoes{display:none}}</style>
+<script>(function(){var h=document.documentElement,b=document.querySelectorAll('.versoes button'),k='rota-cab';
+function por(v){h.classList.toggle('cab-escuro',v==='escuro');b.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.cab===v)});try{localStorage.setItem(k,v);history.replaceState(null,'','#'+v)}catch(e){}}
+b.forEach(function(x){x.addEventListener('click',function(){por(x.dataset.cab)})});
+var ini=location.hash==='#escuro'?'escuro':location.hash==='#claro'?'claro':null;
+if(!ini){try{ini=localStorage.getItem(k)}catch(e){}}
+por(ini==='escuro'?'escuro':'claro');})();</script></body>
+</html>
