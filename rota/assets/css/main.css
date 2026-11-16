@@ -590,12 +590,12 @@ ul{padding:0;list-style:none}
 .materia__texto table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto}
 .materia__texto th,.materia__texto td{padding:8px 10px;border:1px solid var(--filete);text-align:left}
 /* Convite para assinar no fim do texto */
-.assinar{margin-top:40px;padding:24px 28px;background:var(--creme);border-left:3px solid var(--ouro);border-radius:0 14px 0 0}
-.assinar__titulo{font:700 19px/1.3 var(--sans)}
+.assinar{margin-top:40px;padding-top:18px;border-top:2px solid var(--tinta)}
+.assinar__titulo{font:700 21px/1.25 var(--sans);letter-spacing:-.01em}
 .assinar__texto{margin-top:6px;color:var(--tinta-2);font-size:15px}
 .assinar__botoes{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 .assinar + .compartilhar{margin-top:24px}
-@media (max-width:719px){.assinar{padding:20px}.assinar__botoes .botao{flex:1 1 100%;justify-content:center}}
+@media (max-width:719px){.assinar__botoes .botao{flex:1 1 100%;justify-content:center}}
 @media print{.assinar{display:none!important}}
 
 /* Cartão de coluna/artigo: nome, título e data juntos no topo (sem espalhar pela altura da linha) e nome longo cortado */
@@ -619,9 +619,12 @@ ul{padding:0;list-style:none}
 @media (max-width:1023px){.grade--videos-home{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:719px){.grade--videos-home{gap:16px}}
 
-/* Canal do WhatsApp no meio da notícia */
-.canal-zap{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;margin:1.6em 0;padding:18px 20px;background:var(--creme);border-left:3px solid var(--ouro);border-radius:0 14px 0 0;font-size:15px;line-height:1.45}
+/* Canal do WhatsApp no meio da notícia: faixa entre filetes, no tom das seções do site */
+.canal-zap{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px 16px;margin:1.8em 0;padding:16px 0;border-top:1px solid var(--filete);border-bottom:1px solid var(--filete);font:400 15px/1.45 var(--sans);color:var(--tinta-2)}
 .canal-zap p{margin:0!important}
-.canal-zap__icone{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#101010;color:var(--ouro)}
-.canal-zap .botao{background:var(--ouro);border-color:var(--ouro);color:#101010;text-decoration:none;white-space:nowrap}
+.canal-zap strong{display:block;margin-bottom:2px;font-weight:700;font-size:16px;color:var(--tinta)}
+.canal-zap br{display:none}
+.canal-zap__icone{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--filete);border-radius:50%;color:var(--ouro-texto)}
+.canal-zap .botao{padding:9px 16px;color:var(--tinta);text-decoration:none;white-space:nowrap}
+.canal-zap .botao:hover{color:var(--papel)}
 @media (max-width:719px){.canal-zap{grid-template-columns:auto 1fr}.canal-zap .botao{grid-column:1/-1;justify-self:start}}
