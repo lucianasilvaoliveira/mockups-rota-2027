@@ -778,5 +778,24 @@ function por(v){h.classList.toggle('cab-escuro',v==='escuro');b.forEach(function
 b.forEach(function(x){x.addEventListener('click',function(){por(x.dataset.cab)})});
 var ini=location.hash==='#escuro'?'escuro':location.hash==='#claro'?'claro':null;
 if(!ini){try{ini=localStorage.getItem(k)}catch(e){}}
-por(ini==='escuro'?'escuro':'claro');})();</script></body>
+por(ini==='escuro'?'escuro':'claro');})();</script><style>
+@media (min-width:1024px){
+  html.oab-ajustado .capa .card--lead .card__foto img{height:290px!important}
+  html.oab-ajustado .capa .card--lead .card__titulo{font-size:28px}
+  html.oab-ajustado .capa .card--lead .card__texto{padding-top:56px}
+  html.oab-maior .ad--capa_1{min-height:420px}
+}
+.versoes a,.versoes span,.versoes button{white-space:nowrap}
+.versoes .versoes__sep{width:1px;height:20px;margin:0 8px;background:#3a3a3a}
+@media (max-width:719px){.versoes .versoes__oab{display:none}}
+</style>
+<script>(function(){var n=document.querySelector('.versoes');if(!n)return;
+var h=document.documentElement,k='rota-oab',ad=document.querySelector('.ad--capa_1');
+n.insertAdjacentHTML('beforeend','<i class="versoes__sep versoes__oab"></i><span class="versoes__oab">Anúncio OAB</span><button type="button" class="versoes__oab" data-oab="ajustado">Ajustado</button><button type="button" class="versoes__oab" data-oab="maior">Banner maior</button>');
+var b=n.querySelectorAll('[data-oab]');
+function por(v){h.classList.toggle('oab-ajustado',v==='ajustado');h.classList.toggle('oab-maior',v==='maior');
+b.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.oab===v)});
+if(ad)ad.setAttribute('data-medida',v==='maior'?'368×420':'368×290');try{localStorage.setItem(k,v)}catch(e){}}
+b.forEach(function(x){x.addEventListener('click',function(){por(x.dataset.oab)})});
+var ini=null;try{ini=localStorage.getItem(k)}catch(e){}por(ini==='maior'?'maior':'ajustado');})();</script></body>
 </html>
