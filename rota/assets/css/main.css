@@ -618,3 +618,10 @@ ul{padding:0;list-style:none}
 .grade--videos-home .card__titulo{font-size:16px;margin-top:12px}
 @media (max-width:1023px){.grade--videos-home{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:719px){.grade--videos-home{gap:16px}}
+
+/* Canal do WhatsApp no meio da notícia */
+.canal-zap{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;margin:1.6em 0;padding:18px 20px;background:var(--creme);border-left:3px solid var(--ouro);border-radius:0 14px 0 0;font-size:15px;line-height:1.45}
+.canal-zap p{margin:0!important}
+.canal-zap__icone{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#101010;color:var(--ouro)}
+.canal-zap .botao{background:var(--ouro);border-color:var(--ouro);color:#101010;text-decoration:none;white-space:nowrap}
+@media (max-width:719px){.canal-zap{grid-template-columns:auto 1fr}.canal-zap .botao{grid-column:1/-1;justify-self:start}}
