@@ -151,7 +151,7 @@ ul{padding:0;list-style:none}
 .foto-colunista{width:72px;height:72px;object-fit:cover;border-radius:50%;background:var(--creme)}
 .foto-colunista--vazia{display:flex;align-items:center;justify-content:center;flex:none;border:1px solid var(--filete);color:var(--ouro-texto);font:700 15px/1 var(--sans);letter-spacing:.02em}
 .coluna-cab .foto-colunista--vazia,.sobre-autor .foto-colunista--vazia{font-size:28px}
-.indice-colunas .foto-colunista--vazia{font-size:24px}
+.indice-colunas .foto-colunista--vazia{font-size:18px}
 .menu__sub .foto-colunista--vazia,.outras-colunas .foto-colunista--vazia{font-size:11px}
 .coluna-card .card__titulo{font-size:16px}
 .coluna-card .card__meta,.coluna-card .card__data{margin-top:6px}
@@ -231,7 +231,10 @@ ul{padding:0;list-style:none}
 .coluna-sobre .rotulo{margin:0 0 6px}
 .card__autor strong{font-weight:600;color:var(--tinta-2)}
 /* No computador a apresentação fica na lateral; o "Sobre o colunista" do fim só aparece sem a lateral */
-.colunista-box__titulo{margin:0 0 4px;padding-bottom:10px;border-bottom:2px solid var(--tinta);font:700 13px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--tinta)}
+.colunista-box--texto{padding:0 0 22px;background:none;border:0;border-bottom:1px solid var(--filete);border-radius:0}
+.colunista-box__titulo{display:flex;align-items:center;gap:10px;margin:0 0 16px;font:600 12px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ouro-texto)}
+.colunista-box__titulo::before{content:"";width:18px;height:2px;background:var(--ouro);flex:none}
+
 
 /* Compartilhar no fim da matéria */
 .compartilhar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:32px;padding:20px 0;border-top:1px solid var(--filete);border-bottom:1px solid var(--filete)}
@@ -443,11 +446,16 @@ ul{padding:0;list-style:none}
 /* Índice das colunas */
 .indice-colunas{display:grid;grid-template-columns:repeat(3,1fr);gap:0 48px}
 .indice-colunas__item{padding:28px 0 32px;border-bottom:1px solid var(--filete)}
-.indice-colunas__pessoa{display:flex;align-items:center;gap:16px;margin-bottom:20px}
-.indice-colunas__pessoa .foto-colunista{width:88px;height:88px;flex:none}
-.indice-colunas__pessoa .rotulo{display:block;margin-bottom:4px}
-.indice-colunas__nome{display:block;font:700 18px/1.25 var(--sans)}
-.indice-colunas__ultimo{font:600 10px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--mudo);margin-bottom:6px}
+.indice-colunas__cab{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.indice-colunas__cab .foto-colunista{width:56px;height:56px;flex:none}
+.indice-colunas__coluna{display:block;font:700 22px/1.2 var(--sans);letter-spacing:-.015em;color:var(--tinta)}
+.indice-colunas__cab:hover .indice-colunas__coluna{color:var(--ouro-texto)}
+.indice-colunas__por{display:block;margin-top:3px;font:400 13px/1.3 var(--sans);color:var(--mudo)}
+.indice-colunas__desc{margin-bottom:16px;font-size:14px;line-height:1.55;color:var(--tinta-2)}
+.indice-colunas__desc p{margin:0}
+.indice-colunas__ultimo{padding-top:14px;border-top:1px solid var(--filete)}
+.indice-colunas__meta-autor{display:none}
+.indice-colunas__rotulo{font:600 10px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--mudo);margin:0 0 6px}
 .indice-colunas .card__titulo{font-size:17px}
 
 /* Últimas, artigos, TV */
@@ -477,11 +485,11 @@ ul{padding:0;list-style:none}
 .portal-chamada p{color:var(--tinta-2)}
 .portal-chamada .portal-chamada__titulo{color:var(--tinta)}
 .portal-chamada__botoes{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.apoio-grade{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+.apoio-grade{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
 .apoio-grade li{display:flex}
-.apoio-grade a,.apoio-grade li>img{display:flex;align-items:center;justify-content:center;width:100%;height:120px;padding:16px;border:1px solid var(--filete);border-radius:6px}
+.apoio-grade a,.apoio-grade li>img{display:block;width:100%;aspect-ratio:275/177;overflow:hidden;border:1px solid var(--filete);border-radius:10px}
 .apoio-grade a:hover{border-color:var(--tinta)}
-.apoio-grade img{max-height:80px;width:auto;max-width:100%;object-fit:contain}
+.apoio-grade img{width:100%;height:100%;object-fit:contain}
 .canais{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
 .canal{padding:24px;border:1px solid var(--filete);border-radius:14px 0 14px 0}
 .canal__icone{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--creme);color:var(--ouro-texto);margin-bottom:14px}
@@ -545,10 +553,9 @@ ul{padding:0;list-style:none}
 	.card--texto .card__resumo{font-size:14px}
 	.card--texto .card__foto img{aspect-ratio:1}
 	.indice-colunas{grid-template-columns:1fr}
-	.indice-colunas__pessoa .foto-colunista{width:64px;height:64px}
+	.indice-colunas__coluna{font-size:20px}
 	.grade--videos{grid-template-columns:1fr}
 	.apoio-grade{grid-template-columns:repeat(2,1fr);gap:12px}
-	.apoio-grade a,.apoio-grade li>img{height:96px}
 	.canais{grid-template-columns:1fr}
 	.portal-chamada,.newsletter__form,.busca-vazia{padding:20px}
 	.busca-filtros__opcoes{display:grid;grid-template-columns:1fr}
@@ -596,3 +603,18 @@ ul{padding:0;list-style:none}
 .coluna-card .rotulo{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .coluna-card--autores{grid-template-columns:minmax(0,1fr);grid-template-rows:none}
 .coluna-card--autores .rotulo{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;white-space:normal}
+
+/* Apoiador em rodízio na lateral da notícia */
+.apoiador-lateral{margin-bottom:24px;padding-bottom:22px;border-bottom:1px solid var(--filete)}
+.apoiador-lateral__titulo{display:flex;align-items:center;gap:10px;margin:0 0 14px;font:600 12px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ouro-texto)}
+.apoiador-lateral__titulo::before{content:"";width:18px;height:2px;background:var(--ouro);flex:none}
+.apoiador-lateral__lista{list-style:none;margin:0;padding:0}
+.apoiador-lateral__item{animation:apoiador-entra .5s ease}
+.apoiador-lateral__item img{width:100%;max-width:275px;height:auto;margin:0 auto;border-radius:10px}
+@keyframes apoiador-entra{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.apoiador-lateral__item{animation:none}}
+/* Vídeos na capa (bloco opcional) */
+.grade--videos-home{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:20px}
+.grade--videos-home .card__titulo{font-size:16px;margin-top:12px}
+@media (max-width:1023px){.grade--videos-home{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:719px){.grade--videos-home{gap:16px}}

@@ -108,6 +108,19 @@
 	}
 
 	// Apoiadores: ordem sorteada a cada visita (a página fica no cache; sortear no PHP congelaria a ordem)
+	// Apoiador na lateral da notícia: um por vez, troca a cada 5 s, começando de um sorteado.
+	document.querySelectorAll('[data-rodizio]').forEach(function (bloco) {
+		var itens = bloco.querySelectorAll('.apoiador-lateral__item');
+		if (itens.length < 2) return;
+		var atual = Math.floor(Math.random() * itens.length), parado = false;
+		function mostra(i) { itens.forEach(function (li, n) { li.hidden = n !== i; }); }
+		mostra(atual);
+		bloco.addEventListener('mouseenter', function () { parado = true; });
+		bloco.addEventListener('mouseleave', function () { parado = false; });
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+		setInterval(function () { if (!parado && !document.hidden) { atual = (atual + 1) % itens.length; mostra(atual); } }, 5000);
+	});
+
 	document.querySelectorAll('[data-embaralhar]').forEach(function (lista) {
 		for (var i = lista.children.length; i > 1; i--) lista.appendChild(lista.children[Math.floor(Math.random() * i)]);
 	});
