@@ -342,7 +342,7 @@ ul{padding:0;list-style:none}
 @media (max-width:719px){
 	.topbar nav{display:none}
 	.cabeca__in{gap:12px;padding-top:14px;padding-bottom:14px}
-	.marca__logo{height:40px}
+	.marca__logo{height:42px}
 	.cabeca__busca{display:none}
 	.cabeca__redes{display:none}
 	.menu__redes{display:block;margin:0 0 20px}
